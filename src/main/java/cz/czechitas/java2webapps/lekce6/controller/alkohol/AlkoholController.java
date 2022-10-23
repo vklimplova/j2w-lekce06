@@ -27,17 +27,15 @@ public class AlkoholController {
   }
 
   @PostMapping("")
-  public Object form(@ModelAttribute("form") AlkoholForm form, BindingResult bindingResult) {
-    if (bindingResult.hasErrors()) {
-      return "/alkohol/formular";
-    }
-
+  public Object form(@Valid @ModelAttribute("form") AlkoholForm form, BindingResult bindingResult) {
+/*
     if (form.getVek() < 18) {
       return "/alkohol/nizky-vek";
-/*
-      bindingResult.rejectValue("vek", "", "To by nešlo. Nejsi náhodou starší?");
-      return "/alkohol/formular";
+    }
 */
+
+    if (bindingResult.hasErrors()) {
+      return "/alkohol/formular";
     }
 
     return new ModelAndView("/alkohol/objednano")

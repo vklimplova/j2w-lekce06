@@ -15,7 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class RocniObdobiController {
  @GetMapping("")
  public ModelAndView get() {
-  return new ModelAndView("rocni-obdobi").addObject("form", new RocniObdobiForm());
+  return new ModelAndView("rocni-obdobi")
+          .addObject("form", new RocniObdobiForm());
  }
 
  @PostMapping("")

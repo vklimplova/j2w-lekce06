@@ -16,10 +16,9 @@ public class AlkoholForm {
   private Objem objem;
   @NotBlank
   private String jmeno;
-  @NotNull
-  @Min(1)
+  @Min(18)
   @Max(150)
-  private Integer vek;
+  private int vek;
   @Email
   @NotBlank
   private String email;
@@ -51,11 +50,11 @@ public class AlkoholForm {
     this.jmeno = jmeno;
   }
 
-  public Integer getVek() {
+  public int getVek() {
     return vek;
   }
 
-  public void setVek(Integer vek) {
+  public void setVek(int vek) {
     this.vek = vek;
   }
 

@@ -83,3 +83,7 @@ h1 {
     color: red;
     font-weight: bold;
 }
+
+header {
+    margin-bottom: 2rem;
+}

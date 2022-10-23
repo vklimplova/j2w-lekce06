@@ -1,5 +1,6 @@
+[#ftl]
 <!DOCTYPE html>
-<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Obchůdek pro mlsné jazýčky: čokoláda</title>
@@ -7,12 +8,11 @@
 </head>
 <body>
 <div class="container">
-    <form class="kosik" th:action="@{/cokolada}" method="post">
+    <form class="kosik" action="/cokolada" method="post">
         <h1>Objednávka čokolády</h1>
         <!--
         Formulář bude obsahovat:
         * výběr z druhů čokolády, např.: mléčná, bíla, hořká (select)
-        * výběr velikosti: malá, střední, velká (radio button)
         * Jméno a příjmení (input)
         * e-mail – volitelný údaj (input)
         * souhlas s obchodními podmínkami (check box)

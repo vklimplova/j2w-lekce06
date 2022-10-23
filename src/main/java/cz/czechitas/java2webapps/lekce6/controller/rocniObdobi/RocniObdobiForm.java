@@ -6,13 +6,13 @@ import java.util.EnumSet;
  *
  */
 public class RocniObdobiForm {
-  private EnumSet<RocniObdobiEnum> oblibena;
+  private EnumSet<RocniObdobiEnum> oblibene = EnumSet.noneOf(RocniObdobiEnum.class);
 
-  public EnumSet<RocniObdobiEnum> getOblibena() {
-    return oblibena;
+  public EnumSet<RocniObdobiEnum> getOblibene() {
+    return oblibene;
   }
 
-  public void setOblibena(EnumSet<RocniObdobiEnum> oblibena) {
-    this.oblibena = oblibena;
+  public void setOblibene(EnumSet<RocniObdobiEnum> oblibene) {
+    this.oblibene = oblibene;
   }
 }

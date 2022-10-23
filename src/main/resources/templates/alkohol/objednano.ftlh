@@ -1,5 +1,6 @@
+[#ftl]
 <!DOCTYPE html>
-<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <title>Obchůdek pro mlsné jazýčky: alkohol</title>
@@ -9,7 +10,11 @@
 <div class="container">
     <div class="kosik">
         <h1>Objednávka</h1>
-        <div class="error">Alkohol je v ČR možné prodávat lidem až od 18 let.</div>
+        <div>Objednávka s číslem <strong>${kod}</strong> byla vytvořena.
+            [#if email??]
+                Na e-mail ${email} byla zaslána rekapitulace objednávky.
+            [/#if]
+        </div>
     </div>
 </div>
 </body>
