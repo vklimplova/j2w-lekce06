@@ -14,10 +14,10 @@ public class AlkoholForm {
   @Min(18)
   @Max(150)
   private int vek;
-  @Email
-  @NotBlank
+  @Email //kontroluje validaci emailu
+  @NotBlank //hlídá to, že nemůže být prázdný, používá se pro Stringy (rozdíl mezi NotNull), na seznamy se použije NotEmpty
   private String email;
-  @AssertTrue
+  @AssertTrue //asertivní validace, musí být vždy vyplněna hodnota True - používá se u souhlasů
   private boolean obchodniPodminky;
   private boolean newsletter;
 

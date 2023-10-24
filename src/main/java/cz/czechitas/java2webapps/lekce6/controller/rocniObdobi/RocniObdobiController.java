@@ -19,8 +19,10 @@ public class RocniObdobiController {
           .addObject("form", new RocniObdobiForm());
  }
 
+ // @ModelAttribute - místo ModelandView
  @PostMapping("")
  public String post(@ModelAttribute("form") RocniObdobiForm form) {
+
   return "rocni-obdobi";
  }
 }

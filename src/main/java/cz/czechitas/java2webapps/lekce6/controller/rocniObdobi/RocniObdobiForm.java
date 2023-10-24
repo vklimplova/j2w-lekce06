@@ -3,7 +3,7 @@ package cz.czechitas.java2webapps.lekce6.controller.rocniObdobi;
 import java.util.EnumSet;
 
 /**
- *
+ * EnumSet je množina prvků, nemůžou se opakovat, pořadí je náhodný
  */
 public class RocniObdobiForm {
   private EnumSet<RocniObdobiEnum> oblibene = EnumSet.noneOf(RocniObdobiEnum.class);
